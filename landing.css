@@ -1,0 +1,26 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxo_s9Fw6AkC7g8-vj7hAcjYKT6oe5tAPdug&usqp=CAU);
+  position: cover;
+}
+
+.button {
+  color: white;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.menu {
+  right: 2%;
+  top: 0;
+  text-align: center;
+  font-size: 5vw;
+  color: white;
+  background-color:hsl(0,0%,20%);
+  position: fixed;
+  z-index: 10;
+}
