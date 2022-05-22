@@ -4,14 +4,14 @@ var price = 20;
 document.getElementById("price").innerHTML =  price ;
 var gameover = 0;
 var minigame_timer = 10;
-var x;
+var minigame;
 var samegame = -1;
 
 // เงิน (total rn = 540)
 var money = 10;
 var bonus = 0;
-var minute = 3;
-var sec = 1;
+var minute = 2;
+var sec = 15;
 var alart_timer = -1;
 var quiz = 0;
 var quiz_drop = 0;
@@ -84,26 +84,26 @@ window.setInterval(function () {
     document.getElementById("warning").style.zIndex="-1"
     stopalert();
    
-    x = Math.floor(Math.random() * 3);
-   
-    if (x == samegame)
-    {
-      x = Math.floor(Math.random() * 3);
+    minigame = Math.floor(Math.random() * 3);
+
+    while (minigame == samegame) {
+      minigame = Math.floor(Math.random() * 3);
     }
-    
+    samegame = minigame;
+
     // random 4 number
-    if (x==0){
+    if (minigame==0){
       document.getElementById("game1").style.zIndex="20"
       quiz = game1();
     }
     // choice
-    if (x==1){
+    if (minigame==1){
       document.getElementById("game2").style.zIndex="20"
       var y = Math.floor(Math.random() * 5);
       game2(y);
     }
     // drag
-    if (x==2){
+    if (minigame==2){
       document.getElementById("game3").style.zIndex="20"
 
     }
