@@ -1,0 +1,50 @@
+.html, body {
+  font-family: "Chakra Petch", sans-serif;
+}
+#container
+{
+  background-image: url(https://media.discordapp.net/attachments/957340274709917716/967749441744429106/Space_BG1_Comp.jpg?width=1202&height=676);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  z-index: 1;
+}
+
+.button {
+  color: white;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.menu {
+  left: 42vw;
+  top: 55vh;
+  text-align: center;
+  font-size: 5vw;
+  color: white;
+  position: fixed;
+}
+
+.retry {
+  left: 42vw;
+  top: 40vh;
+  text-align: center;
+  font-size: 5vw;
+  color: white;
+  position: fixed;
+}
+
+.title {
+  left: 25vw;
+  top: 10vh;
+  text-align: center;
+  font-size: 10vw;
+  color: white;
+  position: fixed;
+}

@@ -2,29 +2,33 @@
 <html>
 
 <head>
-<link rel="stylesheet"
-  href="https://fonts.googleapis.com/css?family=Exo">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>LUNA GATEWAY</title>
+  <title>LUNAR GATEWAY</title>
   <link href="index.css" rel="stylesheet" type="text/css" />
 </head>
 
+<link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Chakra+Petch">
+
 <body
   <div class="title">
-    Lunar Gateway
+    <img src="https://cdn.discordapp.com/attachments/957340274709917716/977777712791977994/Lunar_gateway_5_.png" id="title">
   </div>
-  <a href="./game.html" target="_self">
-    <div class=" start button">Start</div>
+  <a href="./game/game.html" target="_self">
+    <div class="start button">
+      <img src="https://cdn.discordapp.com/attachments/957340274709917716/977777617128263700/Start_button.png" id="start">
+    </div>
+  <a href="./landing/landing.html" target="_self">
+    <div class="skipgame button">
+    <img src="https://cdn.discordapp.com/attachments/957340274709917716/977684755007037461/Dont_wanna_play_game_button.png" id="skipgame">
+    </div>
   </a>
-  <a href="./credit.html" target="_self">
-    <div class="credit button" >Credit</div>
-  </a>
-  <a href="./landing.html" target="_self">
-    <div class="skipgame button">Don't wanna play game?</div>
-  </a>
-  <!-- <div>Registration closes in <span id="time">05:00</span> minutes!</div> -->
-  <!-- <script src="index.js"></script> -->
+  <script src="index.js"></script>
+  <audio id="bgm" src="../audio/FairyTheme.mp3" autoplay loop></audio>
 </body>
-
 </html>
+<script>
+    var bgm = document.getElementById("bgm");
+    bgm.volume = 0.05;
+</script>

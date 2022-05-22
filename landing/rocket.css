@@ -1,0 +1,74 @@
+/* 0html, body{
+  overflow-x: hidden;
+  width: 50%;
+  height: 50%;
+  background-image:url('https://cdn.discordapp.com/attachments/652083387175272468/971407988650807326/unknown.png');
+  margin:0;
+  padding:0;
+  position: center;
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+ @import url('https://fonts.googleapis.com/css2family=Creepster&family=Inconsolata:wght@200&display=swap');  
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('http://fonts.cdnfonts.com/css/arcade-classic');
+} */
+
+/*  */
+
+#rocket{
+  width: 4vw;
+  display:flex;
+  height:  10vh;
+  margin-right:10%;
+  margin-bottom:10%;
+  transition:all .3s;
+  transform: rotateY(0deg);
+  z-index: 3;
+}
+
+#rocket:hove{
+/*   transform:scale(1.1) rotate(2deg) translatey(-5%);
+   opacity:.5; */
+/*    animation:gogo 1sinfinite; */
+}
+
+.to-top {
+  background: 
+  hsla(0, 0%, 0%, 0);
+/*   red; */
+  position: fixed;
+  bottom: 16px;
+  right:32px;
+  width: 4vw;
+  height: 10vh;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+/*   opacity: 0; */
+  opacity:.85;
+  pointer-events: auto;
+  transition: all .4s;
+}
+
+.to-top.active {
+  bottom:32px;
+  pointer-events: auto;
+  opacity:0.75;
+}
+
+.to-top:hover {
+  animation:gogo 2s ;
+  animation-fill-mode: forwards;
+}
+
+@keyframes gogo {
+  0% {
+    opacity:0.75;
+  }
+  100% {
+    transform:scale(1.2) rotate(-12deg) translatey(-2vw);
+    opacity:1;
+  }
+}

@@ -18,18 +18,17 @@
     </div>
 
 <!-- timer ui -->
-  <div id="minute"></div>
-  <div id="second"></div>
+  <div id="timer"></div>
   <div id="lvl"></div>
   
 <!--   inventory -->
-
+  <img src="https://cdn.discordapp.com/attachments/957340555753427034/972487422438932550/unknown.png" id="invbg">
   <img 
-src="https://media.discordapp.net/attachments/957340555753427034/971356665993637939/inventorybar.png"
+src="https://cdn.discordapp.com/attachments/957340555753427034/971782892873211934/inventorybar.png"
    class="inv">
   <div id="inviconcontainer">
     <img  src="https://media.discordapp.net/attachments/957340555753427034/971782892638322809/finalfinal.png"
-     class="invicon">
+     id="invicon">
   </div>
 
 <!--   price -->
@@ -90,6 +89,21 @@ win<div>
   
 <!-- warning -->
 <img src="https://cdn.discordapp.com/attachments/957340555753427034/971358438523277332/ALERT.png" id="warning">
+
+
+<!-- minigame -->
+<div id="game1">
+  <img src="https://cdn.discordapp.com/attachments/957340555753427034/972500262390464562/number_1.png" id="numberbox">
+  <div id="number"></div>
+  <img src="https://cdn.discordapp.com/attachments/957340555753427034/972500262050742312/typenumber_1.png" id="numberbox_ans">
+  <input id='number_ans'>
+  
+  <img src="https://cdn.discordapp.com/attachments/957340555753427034/972489824101613608/monitor.png" id="game1bg"/>
+<div class="button" id="verify" onclick="check_num(document.getElementById('number_ans').value,)"></div>
+
+  <div id="minigame_timer"></div>
+  
+</div>
 </body>
   
 </html>

@@ -1,0 +1,147 @@
+ html, body{
+  overflow-x: hidden;
+  width: 100%;
+  background-image:url('https://cdn.discordapp.com/attachments/652083387175272468/971407988650807326/unknown.png');
+  margin:0;
+  padding:0;
+  position: center;
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+ @import url('https://fonts.googleapis.com/css2family=Creepster&family=Inconsolata:wght@200&display=swap');  
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('http://fonts.cdnfonts.com/css/arcade-classic');
+} 
+
+.picbg4{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+  top: 326%; /*ตำแหน่งรูป  */
+  left: 0%; /*ตำแหน่งรูป  */
+  position: absolute;
+}
+
+.centerbg4{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%; /*ขนาดรูป  */
+  height: 100%; /*ขนาดรูป  */
+  top: 0%; /*ตำแหน่งรูป  */
+  left: 0%; /*ตำแหน่งรูป */
+}
+
+.cpic1{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 120%; /*ขนาดรูป  */
+  height: 120%; /*ขนาดรูป  */
+}
+
+.wpic1{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 80%;
+  overflow: visible;
+  top: 355%; /*ตำแหน่งรูป  */
+  right: 0%; /*ตำแหน่งรูป  */
+  float: left;
+  position: absolute;
+}
+
+.slideshow-container {
+  max-width: 75%;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 2vh;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 3vh;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  transition: all .4s;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  transform:scale(1.2)translatey(-20%);
+  
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 1vw;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 1.5vh;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/2 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 2vw;
+  padding: 8px 12px;
+  position: absolute;
+  margin-top: -4.5vh;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dotpage4 {
+  cursor: pointer;
+  height: 1.5vw;
+  width: 1.5vw;
+  margin: 1vh 0.5vw;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #2230ec;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+  html {
+  scroll-behavior: smooth;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}

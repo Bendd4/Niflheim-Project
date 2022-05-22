@@ -1,16 +1,30 @@
-html, body {
-  width: 100%;
-  height: 100%;
-  background-image: url(https://cdn.discordapp.com/attachments/960562449520680990/965177044952563762/unknown.png);
-  position: cover;
+html {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(https://media.discordapp.net/attachments/957340274709917716/967749441744429106/Space_BG1_Comp.jpg?);
+  background-size: cover;
+  overflow: hidden;
+  font-family: "Chakra Petch", sans-serif;
 }
 
 .title {
   text-align: center;
+  width: 60vw;
+  height: 12.5vw;
   top: 10%;
+  left: 50%;
+  margin-left: -30vw;
   font-size: 10vw;
   position: fixed;
   color: white;
+  background-color:hsla(0,0%,0%,0.5);
+  border-radius: 0.5vw;
+}
+
+#title {
+  width: 50vw;
+  height: 10vw;
+  padding-top: 2%;
 }
 
 .button {
@@ -24,28 +38,49 @@ html, body {
 
 .start {
   text-align: center;
+  width: 20vw;
+  height: 10vw;
+  margin-left: -10vw;
   top: 40%;
-  left: 44%;
+  left: 50%;
   font-size: 9vw;
   color: white;
   position: fixed;
+  background-color:hsla(0,0%,0%,0);
+  border-radius: 0.5vw;
 }
 
-.credit {
-  text-align: center;
-  bottom: 20%;
-  left: 45%;
-  font-size: 5vw;
-  color: white;
-  position: fixed;
+#start {
+  width: 20vw;
+  height: 7vw;
+}
+
+.start:hover {
+  background-color:hsla(0,0%,80%,0.3);
+  border-radius: 0.5vw;
 }
 
 .skipgame {
   text-align: center;
-  bottom: 10%;
-  left: 40%;
+  width: 25vw;
+  height: 3vw;
+  margin-left: -12.5vw;  
+  bottom: 20%;
+  left: 50%;
   font-size: 2.5vw;
   color: white;
   text-decoration: underline;
   position: fixed;
+}
+
+#skipgame {
+  width: 25vw;
+  height: 3vw;
+  bottom: 20%;
+  left: 50%;
+}
+
+.skipgame:hover {
+  background-color:hsla(0,0%,80%,0.3);
+  border-radius: 0.5vw;
 }
