@@ -8,7 +8,7 @@ var x;
 var samegame = -1;
 
 // เงิน (total rn = 540)
-var money = 0;
+var money = 10;
 var bonus = 0;
 var minute = 3;
 var sec = 1;
@@ -16,6 +16,8 @@ var alart_timer = -1;
 var quiz = 0;
 var quiz_drop = 0;
 var num = 0;
+var multiplier = 2; //Normally 1, For presentation 2
+
 window.setInterval(function () {
    document.getElementById("close").addEventListener("click", test);
   document.getElementById("price").innerHTML =  price ;
@@ -49,7 +51,7 @@ window.setInterval(function () {
     sec = sec + 1;
     alart_start = alart_start - 1;
   }
-  money = money + bonus;
+  money = money + (bonus*multiplier);
 
   document.getElementById("money").innerHTML =  money ;
 
