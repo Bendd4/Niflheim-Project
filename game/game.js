@@ -16,7 +16,7 @@ var alart_timer = -1;
 var quiz = 0;
 var quiz_drop = 0;
 var num = 0;
-var multiplier = 2; //Normally 1, For presentation 2
+var multiplier = 1; //Normally 1, For presentation 2
 
 window.setInterval(function () {
    document.getElementById("close").addEventListener("click", test);
